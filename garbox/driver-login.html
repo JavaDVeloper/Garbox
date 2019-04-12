@@ -10,12 +10,12 @@
 	
 	<meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
 	
-    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css"> 
     <link rel="stylesheet" href="./css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 	
 	<!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -23,12 +23,12 @@
 
 </head>
 
-<body onload = "loadDays()">
+<body>
     <!-- <div class="container"> -->
         <!-- Just an image -->
         <div class = "nav-topper">
       	</div>
-        <nav class="navbar navbar-light">
+		<nav class="navbar navbar-light">
         	<div class="container">
         		<div class="col-md-0 col-lg-1 col-xl-1">
             	</div>
@@ -40,8 +40,7 @@
             	<div class="col-md-0 col-lg-1 col-xl-1">
             	</div>
             </div>                      
-        </nav>
-      <!-- </div> -->
+        </nav>      <!-- </div> -->
       <div class = "nav-shadow">
       </div>
     <div class="container">
@@ -64,31 +63,41 @@
             <div class="col-md-0 col-lg-1 col-xl-1">
             </div>   
             <div class="col-md-12 col-lg-10 col-xl-10 main-panel">
-                <p id="header-text">CHOOSE YOUR OPTION</p>
-				<div class="display-panel">
-            		<div class="display">
-            		<a href="mechanic_login.html">
-            			<div id="display-picture-mechanic">
-                		<!-- 	<img src="img/mech_login_img.png" alt="Mechanic login page"/> -->
-						</div>
-					</a>		               		
-                		<div class="display-description-mechanic">
-				    		Mechanic         
+				<div class="display-login-panel">
+				                <p id="header-text">ENTER YOUR ACCOUNT</p>
+					<form action="" method="POST">
+<!--             			<div id="display-login-mechanic"> -->
+<!--                 			Login:  -->
+<!-- 						</div> -->
+						<div >                		
+                			<input type="text" id="driver-login" value="USER NAME"/>        
+                		</div>
+                		<br/>
+
+
+<!--             			<div id="display-pass-mechanic">                        -->
+<!--                 			Password: -->
+<!--                 		</div>	 -->
+                		<div >                		
+                			<input type="text" id="driver-pass" value="PASSWORD"></input>
                 		</div>
 
-					</div>
+                		<br/>
+<!--                 		<div id="display-submit-mechanic">                         -->
+<!--                 			Submit: -->
+<!--                 		</div> -->
+                		<div id="submit-block">	
+                			<div id="login-submit-button">              		
+                				<input type="submit" id="login-submit" value="LOGIN"/>
 
-                	<div class="display">
-                	   	<a href="driver-login.html">   
-            			<div id="display-picture-driver">
-                  
-                			<!-- <img src="img/driver_login_img.png" alt="Driver login page"/> -->
-                		</div>
-                		</a>	
-                		<div class="display-description-driver">
-                			Driver
-                		</div>
-                	</div>
+
+                				<div   id="submit-pointer">	
+
+                					<img src="img/pointer.png" width="30" height="30">
+                				</div>
+                			</div>
+                		</div>	
+                	</form>	
                 </div>
                                   
                 <div style="clear: both"></div> 
@@ -106,12 +115,14 @@
     crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/date_processing.js" type="text/javascript"></script>
+    <script src="js/interaction.js" type="text/javascript"></script>
 
         <!--bootstrap scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!--     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ -->
 
 </body>
 </html>

@@ -1,5 +1,6 @@
 body{
-	background-color: #EFEFEF;	
+	background-color: #EFEFEF;
+	font-family: 'Poppins', sans-serif;
 }
 
 #logotype{
@@ -22,7 +23,7 @@ body{
 }
 
 .main-header, .main-panel{
-	background-color: #C7C7C7;
+	background-color: #E0E0E0;
 	padding-top: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
@@ -59,7 +60,6 @@ body{
 	font-size: 30px;
 }
 
-
 .step-number{
 	width: 60px;
 	font-size: 30px;
@@ -74,7 +74,7 @@ body{
 }
 
 .display-login-panel{
-	background-color: #999;
+
 	padding-bottom: 20px;
 	padding-left: 200px;
 	padding-right: 200px;
@@ -140,7 +140,6 @@ body{
 	float: right;
 }
 
-
 label{
 	font-size: 24px;
 	font-weight: 700;
@@ -163,7 +162,7 @@ label{
 	background-color: #551199;
     border: 2px solid #7733CC;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .tmstp{
@@ -205,9 +204,9 @@ label{
 }
 
 .display-login-panel{
-	margin: 30px;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-top: 30px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 #display-login-mechanic, #display-pass-mechanic, #display-submit-mechanic{
@@ -220,11 +219,25 @@ label{
 	width: 100%;
 }
 
+#driver-login, #driver-pass, #login-submit{
+	width: 100%;
+	border: 8px solid #870d4e;
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	color: #BEA9B3;
+}
+
+#driver-pass {
+	border-color: #BC477B;
+	color: #DABECB;
+}
+
 #login-submit{
-	background-color: #bb467a;
+	background-color: #880E4F;
+	color: #fff;
 	border: none;
 	box-shadow: 4px 4px 0 rgb(0,0,0, 0.3);
-	text-align: left;
 }
 
 #login-submit:hover{
