@@ -74,7 +74,6 @@ body{
 }
 
 .display-login-panel{
-
 	padding-bottom: 20px;
 	padding-left: 200px;
 	padding-right: 200px;
@@ -144,7 +143,7 @@ label{
 	font-size: 24px;
 	font-weight: 700;
 	text-align: center;
-	letter-spacing: 5px;
+/* 	letter-spacing: 5px; */
 	color: #fff;
 }
 
@@ -219,50 +218,73 @@ label{
 	width: 100%;
 }
 
-.form-step-frame{
+/* xxx GENERAL: Inner panels xxx*/
+
+#form-step-frame, #roster-table-frame, #service-type-frame, #vehicle-option-frame{
+	display: inline-block;
 	border: 1px solid #870d4e;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+#weekly-calendar, #roster-table{
+	display: inline-block;
+}	
+
+#weekly-calendar{
+	padding-left: 7px;
+}
+
+#form-step-frame{
+	width: 586px;
 }
 
 label{
 	color: #870d4e;
-	font-size: 14px;
-		font-weight: 200;
-	
+	font-size: 18px;
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .single-day-preview{
-	height: 30px;
-	width: 30px;
+	height: 70px;
+	width: 70px;
+	margin-right: 7px;
 	color: #fff;
 	text-align: center;
-	font-size: 18px;
+	font-size: 14px;
+	line-height: 16px;
 	background-color: #bb467a;
+	vertical-align: 50%;
 	float: left;
 }
 
-#driver-login, #driver-pass, #login-submit, #choose-service{
+.single-day-preview:hover{
+	background-color: #f297c3;
+}
+
+.input-frame{
 	width: 100%;
 	min-width: 360px;
-	border: 8px solid #870d4e;
+	border: 6px solid #870d4e;
 	font-size: 28px;
 	text-align: center;
 	font-weight: bold;
 	color: #BEA9B3;
 	border-radius: 0px;
 	border-radius: 0px;
-
-}
-
-#choose-service{
 	background-color: #eee;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#choose-service-select{
+.select-option{
 	min-width: 360px;
 	width: 100%;
 	border: 0;
+	color: #770000;
 	background: none;
 }
 
@@ -295,6 +317,61 @@ box-shadow: none;
 #click{
 	color: #ffffff;
 }
+
+/* xxxxxxxxxx TABLE FORMATTING xxxxxxxxxx */
+
+table{
+	border: 0;
+}
+
+th, td{
+	min-width: 80px;
+	border: 0.5px solid #550026;
+	border: collapse;
+}
+
+td:first-child, th:first-child {
+ border-left: none;
+}
+
+td:last-child, th:last-child {
+ border-right: none;
+}
+
+
+tr:nth-child(even){
+	background: #c7c7c7;
+}
+
+tr > td {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+th, td{
+	padding: 10px;
+}
+
+th{
+	background-color: #bb467a;
+	color: #fff;
+}
+
+#top-header{
+	background-color: #550026;
+}
+
+/* xxxxxxxxxx VEHICLE DETAILS xxxxxxxxx */
+/* 
+#other-model-to-put, #other-make-to-put{
+	visibility: hidden;
+}
+ */
+
+.vehicle-option-column{
+	display: inline-block;
+}
+
 
 @media (max-width: 575px)  {
 	h1{

@@ -64,13 +64,13 @@
             </div>   
             <div class="col-md-12 col-lg-10 col-xl-10 main-panel">
 				<div class="display-login-panel">
-				    <p id="header-text">BOOK SERVICE</p>
 					<form action="" method="POST">
-            			<div class="form-step-frame">
+            			<div id="service-type-frame">
             			<label>Choose a type of the service</label>
                			<br/>
-						<div id="choose-service">                		
-                			<select name="choose-service"  id="choose-service-select" >
+						<div class="input-frame">                		
+                			<select name="service-type" id="service-type" class="select-option" >
+                				<option value="0">Choose service</option>
                 				<option>AAAAAA</option>
                 				<option>BBBBBB</option>
                 			</select>        
@@ -79,7 +79,7 @@
 
                 		<div id="submit-block">	
                 			<div id="login-submit-button">              		
-                				<input type="submit" id="login-submit" value="LOGIN"/>
+                				<input type="submit" id="login-submit"  class="input-frame" value="CHECK AVAILABILITY"/>
 
 
                 				<div id="submit-pointer">	
