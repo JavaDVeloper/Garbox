@@ -63,12 +63,9 @@
             <div class="col-md-0 col-lg-1 col-xl-1">
             </div>   
             <div class="col-md-12 col-lg-10 col-xl-10 main-panel">
-            
-            
 					<div id="vehicle-option-frame" >
 					    <label>Give some details of the vehicle</label>
                			<br/>
-               			<div class="vehicle-option-column">
 							<div class="input-frame">                		
                 				<select name="vehicle-model" id="vehicle-model" class="select-option" >
                 					<option value="0">Choose model</option>
@@ -76,6 +73,9 @@
                 					<option>BBBBBB</option>
                 					<option value="other">OTHER</option>
                 				</select>        
+                			</div>
+                			<div class="input-frame hidden-text-frame" id="other-model-to-put">
+                				<input type="text" class="input-text" name="other-model" value="Enter your model" />	
                 			</div>
 							<div class="input-frame">                		
                 				<select name="vehicle-make" id="vehicle-make" class="select-option" >
@@ -85,6 +85,9 @@
                 					<option value="other">OTHER</option>
                 				</select>        
                 			</div>
+                			<div class="input-frame hidden-text-frame" id="other-make-to-put">
+                				<input type="text" class="input-text" name="other-make" value="Enter your make"/>
+                			</div>
 							<div class="input-frame">                		
                 				<select name="vehicle-type" id="vehicle-type" class="select-option" >
                 					<option value="0">Choose vehicle type</option>
@@ -93,7 +96,6 @@
                 					<option value="other">OTHER</option>
                 				</select>        
                 			</div>
-                			<br/>
                 			<div class="input-frame">                		
                 				<select name="engine-type" id="engine-type" class="select-option" >
                 					<option value="0">Choose engine type</option>
@@ -102,32 +104,15 @@
                 					<option value="other">OTHER</option>
                 				</select>        
                 			</div>
-                			<br/>
                 			<div class="input-frame">
-                				<input type="text" name="vehicle-registration" id="vehicle-registration" class="select-option" value="Put registration in"/>                		       
+                				<input type="text" name="vehicle-registration" id="vehicle-registration" class="input-text select-option" value="Put registration in"/>                		       
                 			</div>
-                			<br/>
                 			<div class="input-frame">
-                				<input type="text" name="vehicle-color" id="vehicle-color" class="select-option" value="Put color in"/>                		       
+                				<input type="text" name="vehicle-color" id="vehicle-color" class="input-text select-option" value="Put color in"/>                		       
                 			</div>
-                			
-                		</div><!-- voc-->
-						<div class="vehicle-option-column">
-                			<div class="input-frame" id="other-model-to-put">
-                				<input type="text" value="Enter your model"/>
-                			</div>
-                			<div class="input-frame" id="other-make-to-put">
-                				<input type="text"  value="Enter your make"/>
-                			</div>
-						</div><!-- voc-->
-
                 	</div>
-                	
     			</div>
-    				                              
-	
 			</div>   
-
             <div class="col-md-0 col-lg-1 col-xl-1">
             </div> 
         <div> <!-- end row 2 -->
