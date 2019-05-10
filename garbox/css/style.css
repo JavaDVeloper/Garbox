@@ -382,7 +382,7 @@ th{
 	color: #fff;
 }
 
-#top-header{
+tr.top-header > th, .top-header{
 	background-color: #550026;
 }
 
@@ -399,7 +399,6 @@ th{
 }
  
 .input-text{
-	min-width: 100%;
 	border: 0;
 	background: none;
 	color: #770000;
@@ -446,3 +445,13 @@ th{
 	margin-bottom: -16px;
 }
 
+/* xxxxxxxxxxx LISTS FORMATTING xxxxxxxxxxx */
+.radio-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
