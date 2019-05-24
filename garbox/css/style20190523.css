@@ -1,0 +1,33 @@
+#form-step-frame, #roster-table-frame, #service-type-frame, .vehicle-option-frame{
+	display: inline-block;
+	border: 1px solid #870d4e;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.vehicle-option-frame{
+	vetical-align: middle;
+}
+
+.option-to-confirm, .service-short-description{
+	display: inline-block;
+	padding: 0 1%;
+	width: 150px;
+}
+
+.service-short-description{
+	width: 100%;
+}	
+
+.input-text, .input-textarea{
+	border: 0;
+	background: none;
+	color: #770000;
+	padding-left: 10px;
+
+}
+
+.input-textarea{
+width: 100%;
+}
